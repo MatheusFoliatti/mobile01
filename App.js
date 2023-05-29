@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { useEffect, useState } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
+import { TextInput } from 'react-native-web';
 
 export default function App() {
 
@@ -18,11 +19,12 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>PEREBA</Text>
-      <TouchableOpacity style={styles.button} onPress={handleButton} > 
+      <TouchableOpacity  style={styles.button} onPress={handleButton} > 
         <Text style={ { fontSize: 16 } }>Button</Text>  
       </TouchableOpacity>
       <Text>{text}</Text>
       <StatusBar style="auto" />
+      <TextInput/>
     </View>
   );
 }
