@@ -7,8 +7,9 @@ export default function App() {
   const [text, setText] = useState("")
 
   useEffect(() => {
-    setText('Hello World!')
-  }, [])
+    //setText('Hello World!')
+    console.log("Sofreu Alteração");
+  }, [text])
 
   function handleButton () {
     setText('test10')
